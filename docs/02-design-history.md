@@ -9,7 +9,7 @@ Each version below is in `models/vN/`. Each folder holds the OpenSCAD source (`s
 | v2 | 28 Oct | Teardrop hook, central hose gap, "saddlebag" layout | Quick prototype, tested 29 Oct |
 | v3 | 29 Oct | v2 resized + spacer in front | No: replaced by v4 |
 | v4 | 29 Oct → 15 Nov | Restart from v2 following a hand-drawn plan | Quick prototype, night of 15–16 Nov |
-| v5 | 16 Nov | Final adjustments after the v4 test | Quick prototype and **final part**, 16–17 Nov |
+| v5 | 16 Nov | Final adjustments after the v4 test | Quick prototype (16 Nov) and **final part** (17–18 Nov) |
 
 ![The three quick prototypes side by side: v2 (left), v4 (centre) and v5 (right)](../photos/prints/quick_prototypes_v2_v4_v5.jpg)
 
@@ -17,7 +17,7 @@ Each version below is in `models/vN/`. Each folder holds the OpenSCAD source (`s
 
 - *v2: the full frame with the 1–8 floor cells and tall columns;*
 - *v4: empty floors, floor-level spacer and lower columns;*
-- *v5: only the central part, with the short wall-side walls carrying the rosette chamfer. In the photo it is shown without its arch.*
+- *v5: only the central part, with the short wall-side walls carrying the rosette chamfer. Its arch was never printed: the filament most likely stopped feeding before the arch started (see [printing](05-printing.md#prints)).*
 
 ---
 
@@ -136,7 +136,7 @@ Changes after the v4 test:
 
 **Prints:**
 
-- Quick prototype v5 on 16 Nov: 0.32 mm layers, 2 h 49 estimated, 11.5 m. It was stopped by hand at 98.9 %.
-- Final part 16–17 Nov: about 17 h. Details in [printing](05-printing.md).
+- Quick prototype v5 on 16 Nov: 0.32 mm layers, 2 h 49 estimated, 11.5 m. It was stopped from the panel at 98.9 %. The arch is missing, but the base, the columns, the spacer and the rosette chamfer were enough to check the fit.
+- Final part: two failed attempts (a tangled spool on 16 Nov, then a second stop after 20 minutes on 17 Nov), then a successful print from 17 Nov 12:36 to 18 Nov 04:08. Details in [printing](05-printing.md).
 
 ![The final caddy in use](../photos/installed/installed_close_up.jpg)

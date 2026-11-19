@@ -20,12 +20,16 @@ All G-code files in [`gcode/`](../gcode) are the exact files that were printed.
 |---|---|---|---|---|---|
 | `v2_quick_prototype.gcode` | v2 frame | 0.28 mm | 6 h 09 | 21.6 m | Fit test: see [history](02-design-history.md#v2-first-printable-layout) |
 | `v4_quick_prototype.gcode` | v4 central part, low columns | 0.28 mm | 4 h 41 | 17.7 m | Printed well (night of 15–16 Nov) |
-| `v5_quick_prototype.gcode` | v5 central part | 0.32 mm | 2 h 49 | 11.5 m | Printed well, stopped by hand at 98.9 % (16 Nov) |
-| `v5_final.gcode` | **v5 final** | 0.24 mm | 17 h 08 | 68.9 m | **Success** (16–17 Nov). Corners warped, details below |
+| `v5_quick_prototype.gcode` | v5 central part | 0.32 mm | 2 h 49 | 11.5 m | Fit test OK, but **the arch is missing**; stopped from the panel at 98.9 % (16 Nov), see below |
+| `v5_final.gcode` | **v5 final** | 0.24 mm | 17 h 08 | 68.9 m | 1st attempt (16 Nov, 23:30): stopped, tangled spool. 2nd attempt (17 Nov, 12:16): stopped after 20 min. **3rd attempt (17 Nov 12:36 → 18 Nov 04:08): success**, about 15.5 h in practice. Corners warped, details below |
 
-There was also an **interrupted attempt** at the final part. The filament had **tangled on the spool**, and the knot stopped the extruder from pulling it. The print had to be stopped by hand and the knot cut out. By then only the floors, the low walls, the spacer and the bottom of the two columns were done:
+**First attempt at the final part.** The filament had **tangled on the spool**, and the knot stopped the extruder from pulling it. The print had to be stopped by hand and the knot cut out. By then only the floors, the low walls, the spacer and the bottom of the two columns were done:
 
 ![Interrupted attempt at the final part](../photos/prints/v5_final_interrupted_attempt.jpg)
+
+**The v5 quick prototype has no arch.** The print log shows it was stopped with the panel's Stop button at 23:01 on 16 Nov, at layer 321 of 336 (Z 102.7 mm). In the G-code the arch runs from about Z 75 mm to the top (107.7 mm), so at that point it should have been almost complete. The real part, though, ends at the top of the two columns, with the infill visible.
+
+The most likely explanation is that the filament **stopped feeding before the arch started**, and the nozzle spent the last half hour or so moving through the air. That fits with the first attempt at the final part, half an hour later on the same spool, failing because of a knot in the filament. The webcam video is too dark and low-angle to confirm it.
 
 ## Quick prototypes
 
@@ -87,6 +91,8 @@ From the analysis of `v5_final.gcode` (with `tools/gc.py`):
 3. **Stringing on the first layer.**
 
    ![First layer strings](../photos/prints/v5_final_first_layer_stringing.jpg)
+
+   *(This photo was taken during the first attempt; all attempts used the same G-code.)*
 
    Of 406 travel moves longer than 1 mm on layer 0, only 55 retracted. With combing set to "All", Cura does not retract while the path stays inside the part outline, and the space between the rectangles counts as inside because the bottom skin fills it straight after. First-layer travel is also slow (30 mm/s), at the hottest nozzle temperature of the print. The strings all start at the same corner of each rectangle, where the wall loop ends. **They do not affect strength:** the skin lines of the same layer and the next 3 bottom layers bury them.
 4. **Weight.** Cura estimated 206 g; the part weighs **about 190 g** on a kitchen scale. Cura does not weigh anything: it multiplies the filament length (68.9 m) by the cross-section of a 1.75 mm filament and a density of 1.24 g/cm³. An 8 % difference is typical:

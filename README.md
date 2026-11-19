@@ -73,7 +73,7 @@ The fitting, walls and hoses in this design are measured for one specific shower
 
 ## Status
 
-**Done.** The v5 final part was printed on 16–17 November 2026 and is in daily use. It holds four bottles and a tube, with the hand shower still free to lift out.
+**Done.** The v5 final part was printed on 17–18 November 2026, at the third attempt, and is in daily use. It holds four bottles and a tube, with the hand shower still free to lift out.
 
 ![Installed, wide view](photos/installed/installed_wide.jpg)
 
