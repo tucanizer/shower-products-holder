@@ -11,6 +11,14 @@ Each version below is in `models/vN/`. Each folder holds the OpenSCAD source (`s
 | v4 | 29 Oct → 15 Nov | Restart from v2 following a hand-drawn plan | Quick prototype, night of 15–16 Nov |
 | v5 | 16 Nov | Final adjustments after the v4 test | Quick prototype and **final part**, 16–17 Nov |
 
+![The three quick prototypes side by side: v2 (left), v4 (centre) and v5 (right)](../photos/prints/quick_prototypes_v2_v4_v5.jpg)
+
+*From left to right:*
+
+- *v2: the full frame with the 1–8 floor cells and tall columns;*
+- *v4: empty floors, floor-level spacer and lower columns;*
+- *v5: only the central part, with the short wall-side walls carrying the rosette chamfer. In the photo it is shown without its arch.*
+
 ---
 
 ## v0: the original idea
@@ -130,3 +138,5 @@ Changes after the v4 test:
 
 - Quick prototype v5 on 16 Nov: 0.32 mm layers, 2 h 49 estimated, 11.5 m. It was stopped by hand at 98.9 %.
 - Final part 16–17 Nov: about 17 h. Details in [printing](05-printing.md).
+
+![The final caddy in use](../photos/installed/installed_close_up.jpg)

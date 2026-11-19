@@ -23,6 +23,10 @@ All G-code files in [`gcode/`](../gcode) are the exact files that were printed.
 | `v5_quick_prototype.gcode` | v5 central part | 0.32 mm | 2 h 49 | 11.5 m | Printed well, stopped by hand at 98.9 % (16 Nov) |
 | `v5_final.gcode` | **v5 final** | 0.24 mm | 17 h 08 | 68.9 m | **Success** (16–17 Nov). Corners warped, details below |
 
+There was also an **interrupted attempt** at the final part. It stopped early, after the floors, the low walls, the spacer and the bottom of the two columns:
+
+![Interrupted attempt at the final part](../photos/prints/v5_final_interrupted_attempt.jpg)
+
 ## Quick prototypes
 
 The quick prototypes are meant to check the fit, not to last. To save time:
@@ -60,6 +64,8 @@ From the analysis of `v5_final.gcode` (with `tools/gc.py`):
 - PETG for permanent use in the shower.
 
 ## Final print quality
+
+![The final caddy installed](../photos/installed/installed_wide.jpg)
 
 ![Side view: corner warping](../photos/prints/v5_final_side_view_warping.jpg)
 

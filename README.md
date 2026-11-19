@@ -4,7 +4,14 @@ A 3D-printed caddy for shampoo and shower products. It hangs on the chrome **han
 
 It was designed in parametric **OpenSCAD**, refined through five versions and several quick test prints, and printed in PLA+ on a **Tronxy XY-3 SE**.
 
+![The final caddy installed in the shower, holding shampoo, shower gel and other products](photos/installed/installed_close_up.jpg)
+
+<details>
+<summary>Design renders (v5)</summary>
+
 ![Final design (v5) in the shower and on its own](models/v5/3d_view_v5.png)
+
+</details>
 
 > Labels inside the renders and comments inside the `.scad` files are in Italian, the language the project was developed in. Everything else in this repository is in English.
 
@@ -37,7 +44,8 @@ scan/                 Scaniverse phone scan of the shower (OBJ + texture) used f
 photos/
   site/               the real fitting with the hand shower in place
   drawings/           hand-drawn change requests marked on renders and screenshots
-  prints/             photos of the real prints
+  prints/             photos of the real prints: quick prototypes, an interrupted attempt and the final part
+  installed/          the final caddy in use
 docs/                 the full story, decisions, mistakes and print settings
 ```
 
@@ -65,5 +73,10 @@ The fitting, walls and hoses in this design are measured for one specific shower
 
 ## Status
 
-- **v5 final printed** on 16–17 November 2026: it printed successfully, with some corner warping (see [printing notes](docs/05-printing.md#final-print-quality)).
-- Photos of the installed caddy will be added to `photos/`.
+**Done.** The v5 final part was printed on 16–17 November 2026 and is in daily use. It holds four bottles and a tube, with the hand shower still free to lift out.
+
+![Installed, wide view](photos/installed/installed_wide.jpg)
+
+The print came out well apart from some corner warping (see [printing notes](docs/05-printing.md#final-print-quality)).
+
+![The three quick prototypes: v2, v4 and v5](photos/prints/quick_prototypes_v2_v4_v5.jpg)
