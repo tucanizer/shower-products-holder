@@ -73,6 +73,8 @@ Several corrections came from drawings and short descriptions. Some were misread
 
 These are covered in detail in [printing](05-printing.md):
 
+- **Tangled spool.** The first attempt at the final part failed after a few centimetres: the filament had crossed over itself on the spool, and the knot jammed the feed. The print was stopped by hand and the knot cut out, and the part was printed again from scratch. **Lesson:** on a 17-hour print, check before starting that the spool unwinds freely and has no loose or crossed turns. Never let the free end of the filament go slack when the spool is stored, because that is what lets turns cross.
+
 - **Nozzle temperature.** The final G-code used 215 °C on the first layer and 210 °C after, the bottom of the PLA+ range, instead of the suggested 225/220 °C. Layer bonding is a little weaker, which matters most for the arch.
 - **Stringing on the first layer.** Cura's combing skipped retraction on most travel moves (351 of 406 on layer 0). The strings were buried by the skin and have no effect on strength.
 - **Warping at the corners.** A large flat base, no brim and fan at 100 % from layer 4 near a window: the corners of both compartments lifted a few mm.

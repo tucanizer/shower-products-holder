@@ -23,7 +23,7 @@ All G-code files in [`gcode/`](../gcode) are the exact files that were printed.
 | `v5_quick_prototype.gcode` | v5 central part | 0.32 mm | 2 h 49 | 11.5 m | Printed well, stopped by hand at 98.9 % (16 Nov) |
 | `v5_final.gcode` | **v5 final** | 0.24 mm | 17 h 08 | 68.9 m | **Success** (16–17 Nov). Corners warped, details below |
 
-There was also an **interrupted attempt** at the final part. It stopped early, after the floors, the low walls, the spacer and the bottom of the two columns:
+There was also an **interrupted attempt** at the final part. The filament had **tangled on the spool**, and the knot stopped the extruder from pulling it. The print had to be stopped by hand and the knot cut out. By then only the floors, the low walls, the spacer and the bottom of the two columns were done:
 
 ![Interrupted attempt at the final part](../photos/prints/v5_final_interrupted_attempt.jpg)
 
