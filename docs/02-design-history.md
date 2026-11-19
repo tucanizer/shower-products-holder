@@ -137,6 +137,6 @@ Changes after the v4 test:
 **Prints:**
 
 - Quick prototype v5 on 16 Nov: 0.32 mm layers, 2 h 49 estimated, 11.5 m. It was stopped from the panel at 98.9 %. The arch is missing, but the base, the columns, the spacer and the rosette chamfer were enough to check the fit.
-- Final part: two failed attempts (a tangled spool on 16 Nov, then a second stop after 20 minutes on 17 Nov), then a successful print from 17 Nov 12:36 to 18 Nov 04:08. Details in [printing](05-printing.md).
+- Final part: two failed attempts (a tangled spool on 16 Nov, then a second start on 17 Nov stopped after about 4 minutes), then a successful print from 17 Nov 12:36 to 18 Nov 04:08. Details in [printing](05-printing.md).
 
 ![The final caddy in use](../photos/installed/installed_close_up.jpg)

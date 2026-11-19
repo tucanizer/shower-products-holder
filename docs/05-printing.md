@@ -21,7 +21,7 @@ All G-code files in [`gcode/`](../gcode) are the exact files that were printed.
 | `v2_quick_prototype.gcode` | v2 frame | 0.28 mm | 6 h 09 | 21.6 m | Fit test: see [history](02-design-history.md#v2-first-printable-layout) |
 | `v4_quick_prototype.gcode` | v4 central part, low columns | 0.28 mm | 4 h 41 | 17.7 m | Printed well (night of 15–16 Nov) |
 | `v5_quick_prototype.gcode` | v5 central part | 0.32 mm | 2 h 49 | 11.5 m | Fit test OK, but **the arch is missing**; stopped from the panel at 98.9 % (16 Nov), see below |
-| `v5_final.gcode` | **v5 final** | 0.24 mm | 17 h 08 | 68.9 m | 1st attempt (16 Nov, 23:30): stopped, tangled spool. 2nd attempt (17 Nov, 12:16): stopped after 20 min. **3rd attempt (17 Nov 12:36 → 18 Nov 04:08): success**, about 15.5 h in practice. Corners warped, details below |
+| `v5_final.gcode` | **v5 final** | 0.24 mm | 17 h 08 | 68.9 m | 1st attempt (16 Nov 23:30 → 17 Nov 06:50): stopped after about 7 h, tangled spool. 2nd attempt (17 Nov, 12:16): stopped after about 4 min. **3rd attempt (17 Nov 12:36 → 18 Nov 04:08): success**, about 15.5 h in practice. Corners warped, details below |
 
 **First attempt at the final part.** The filament had **tangled on the spool**, and the knot stopped the extruder from pulling it. The print had to be stopped by hand and the knot cut out. By then only the floors, the low walls, the spacer and the bottom of the two columns were done:
 
